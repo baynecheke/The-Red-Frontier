@@ -9,5 +9,10 @@
         "weight": 5.0,
         "sanity_bonus": 0.0,
         "heals": true
+    },
+    "Fuel": {
+        "name": "Fuel",
+        "mass_kg": 1,
+        "volume_m3": 0.1
     }
 }
