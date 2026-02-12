@@ -1,0 +1,13 @@
+{
+    "guitar": {
+        "name": "Acoustic Guitar",
+        "weight": 2.5,
+        "sanity_bonus": 0.1
+    },
+    "medkit": {
+        "name": "Trauma Kit",
+        "weight": 5.0,
+        "sanity_bonus": 0.0,
+        "heals": true
+    }
+}
