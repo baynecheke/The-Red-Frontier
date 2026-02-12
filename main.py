@@ -3,6 +3,13 @@ import json
 import engine
 
 
+# 1. Open the file in 'read' mode ('r')
+with open('data/items.json', 'r') as file:
+    # 2. Parse the text into a Python Dictionary
+    GAME_ITEMS = json.load(file)
+
+# 3. Now you can use it like a normal dictionary!
+print(GAME_ITEMS["water_recycler_mk1"]["mass_kg"])
 
 # 1. SETUP PHASE
 print("Initializing Simulation...")
