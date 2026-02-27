@@ -16,12 +16,12 @@ with open('data/items.json', 'r') as file:
 print("Initializing Simulation...")
 max_payload_kg = 100_000.0
 max_volume_m3 = 1_000.0
-oxygen_kg = 5000.0
+crew_size = engine.crew.select_starting_crew_members(5, 20)
 
 fuel = 120000 # kg
 food_stock = 1000 # kg
-crew_size = engine.crew.select_starting_crew_members(5, 20)
 water_supply = 500 # kg
+oxygen_kg = 5000.0
 
 # Use the physics module
 delta_v = engine.physics.calculate_thrust(max_payload_kg, fuel)
@@ -42,3 +42,5 @@ for day in range(1, 10): # Simulate 10 days
         break
         
     print(f"Food Remaining: {food_stock:.2f} kg")
+    print(f"Water Remaining: {water_supply:.2f} kg")
+    print(f"Oxygen Remaining: {oxygen_kg:.2f} kg")

@@ -3,7 +3,7 @@ def consume_resources(crew_count, food_stock, water_supply, oxygen_kg):
     calories_required = 3000
     oxygen_required_kg = 0.84
 
-    required = crew_count * calories_required
+    required = crew_count * calories_required /1000 # convert to kg assuming 1kg of food = 1000 calories
     water_required = crew_count * water_required_k
     oxygen_required = crew_count * oxygen_required_kg
     #subtract the required from the stock
