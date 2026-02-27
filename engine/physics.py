@@ -9,3 +9,8 @@ def check_weight_limit(current_mass, max_limit):
     if current_mass > max_limit:
         return False, f"OVERWEIGHT: {current_mass - max_limit}kg too heavy!"
     return True, "Weight OK"
+
+def check_volume_limit(current_volume, max_limit):
+    if current_volume > max_limit:
+        return False, f"OVERVOLUME: {current_volume - max_limit}m³ too much!"
+    return True, "Volume OK"

@@ -2,10 +2,14 @@
     "water_recycler_mk1": {
         "name": "Water Recycler MK1",
         "mass_kg": 2.5,
-        "sanity_bonus": 0.1
+        "volume_m3": 0.1,
+        "action": "recycle",
+        "type": "water",
+        "trigger": "life_support"
     },
     "medkit": {
         "name": "Trauma Kit",
+        "volume_m3": 0.1,
         "weight": 5.0,
         "sanity_bonus": 0.0,
         "heals": true
@@ -14,5 +18,21 @@
         "name": "Fuel",
         "mass_kg": 1,
         "volume_m3": 0.1
+    },
+    "solar_array": {
+        "name": "Deployable Solar Array",
+        "mass_kg": 1500.0,
+        "volume_m3": 5.0,
+        "power_kw": 50.0,
+        "type": "generator",
+        "trigger": "power_phase"
+    },
+    "nuclear_kilopower": {
+        "name": "Kilopower Fission Reactor",
+        "mass_kg": 1800.0,
+        "volume_m3": 4.0,
+        "power_kw": 10.0,
+        "type": "generator",
+        "trigger": "power_phase"
     }
 }
